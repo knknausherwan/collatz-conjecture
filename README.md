@@ -31,31 +31,6 @@ n/2 & \text{if } n \equiv 0 \pmod{2}\\
 
 Repeated application of \(T\) generates the Collatz sequence.
 
-## Implementation
-
-```python
-def collatz(number):
-    """Return and print the next Collatz sequence value."""
-    if number % 2 == 0:
-        num_process = number // 2
-    else:
-        num_process = 3 * number + 1
-
-    print(num_process, end=' ')
-    return num_process
-
-
-def main():
-    number = int(input("Enter a positive integer: "))
-
-    while number != 1:
-        number = collatz(number)
-
-
-if __name__ == "__main__":
-    main()
-```
-
 ## Example
 
 Starting integer: `3`
